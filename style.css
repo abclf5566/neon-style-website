@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Noto Sans JP","Source Sans Pro", "Georgia", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", "HiraMinProN-W3", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "serif";
+	font-size:60px;
+	font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto ;
+}
+main {
+
+    margin-top: 170px;
+}
+header {
+	height: 80px;
+	max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+footer {
+  background-color: #020120;
+  height: 200px;
+}
+
+h1,h2,h3,h4,h5,h6{color: #FFFFFF}
+h1{font-weight: bold}
+h2{font-size:0.5rem}
+h3{font-size:0.3rem}
+
+
+.main-top-text3{
+	text-align:center;
+	margin-top:50px;
+	margin-bottom: 25px
+}
+.page-2-frame {
+    background: #020120;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-2-impact{
+    background-color: #020120;
+    width: 1200px;
+}
+.seo-frame{
+	max-width: 1200px;
+    display: grid;
+	grid-template: "seo-grid seo-grid" 1fr "seo-title seo-title" 1fr "seo-content seo-content"/ 1fr 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+}
+.seo-grid{grid-area: "seo-grid"}
+.seo-titl{grid-area: "seo-title"}
+.seo-content{grid-area: "seo-content"}
+
+
+.coding_frame h2{color:#42FDFC}
+.coding_frame{
+	max-width: 1200px;
+    display: grid;
+	grid-template: "coding-grid coding-grid" 1fr "coding-content coding-content" 2fr/ 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+}
+.coding-grid{grid-area: "coding-grid"}
+.coding-content{grid-area: "coding-content"}
+
+.page-2-design-content{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+}
+.page-2-design-frame{
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: stretch;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+}
+.impact{
+	display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    padding: 20px;
+}
+.neonxxx{
+	max-width: 80px;
+}
+.background{
+	background-image: url("img/neoncity.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	justify-content: stretch;
+	opacity:0.35;
+	z-index: -1;
+	position: fixed;
+
+}
+.page-2 {
+	display: flex;
+    flex-direction: column;
+    place-content: space-between center;
+    width: 100%;
+    height: 1080px;
+    background-color: #020120;
+    justify-content: flex-start;
+}
+.img_skillicon_frame{
+	display: flex;
+    align-content: center;
+    max-width: 600px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px;
+    min-height: 120px;
+}
+.img_skillicon_frame_sub{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    justify-content: space-between;
+}
+.img_skillicon_frame_sub h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;        
+	font-size: 2.5rem;
+	padding: 0px 40px;
+	text-shadow: 0 0 5px #42fdfc, 0 0 5px #42fdfc, 0 0 5px #42fdfc, 0 0 5px #42fdfc;
+	color: #020120;
+}
+.img_skillicon_frame_sub h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;   
+	font-size: 0.4rem;
+	font-weight:normal;
+	word-wrap:break-word;
+}
+.bottom {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px 20px;
+    flex: 0 0 auto;
+    font-weight: 900;
+    align-items: center;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.bottom-frame{
+	max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px 20px;
+    flex: 0 0 auto;
+    font-weight: 900;
+    align-items: center;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+.learn-more:hover{border: 2px solid #42FDFC;color:#42FDFC;}
+.learn-more{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    margin-right: 20px;
+    background: none;
+    flex: 0 0 auto;
+    padding: 28px 64px;
+    border: 2px solid #ffffff;
+    line-height: 0;
+    transition: all 0.2s ease-in-out 0s;
+    outline: none !important;
+	font-size: 0.3rem;
+	color: #FFFFFF;
+}
+.contact-me:hover{color:#000000;background-color: #ffffff}
+.contact-me{
+	height: 70px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    padding: 26px 60px;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    line-height: 0;
+    color: #020120;
+    background-color: #42FDFC;
+    font-weight: 700;
+    flex: 0 0 auto;
+    transition: all 0.2s ease-in-out 0s;
+	font-size: 0.3rem;
+}
+  
+.page-2-title{font-family:'Caveat', cursive;text-shadow: 0 0 5px #42FDFC, 0 0 5px #42FDFC, 0 0 5px #42FDFC, 0 0 5px #42FDFC;display: flex;justify-content: center;align-items: center;font-weight: bold;color:#020120;font-size: 2.5rem;max-width: 360px;flex-direction: column;}
+.page-2-sub{font-family: "Noto Sans JP";font-weight: 100;font-size: 0.3rem;color:#42FDFC;text-shadow: 0 0 0px #42FDFC, 0 0 0px #42FDFC, 0 0 0px #42FDFC, 0 0 0px #42FDFC;}
+
+.h3-color{font-size: 0.3rem}
+.h1-color{color: #42FDFC}
+.font-jp{font-family:"Noto Sans JP"}
+.main-top{display: flex;flex-direction: column;}
+.img_skillicon{height:6vh ;min-height: 100px;}
+.img_icon{display: flex;align-items: center;}
+.img_icon img{height: 3vh;}
+.img_icon img:hover{filter: drop-shadow(5px 5px 5px #fff000);transition: .3s;transform: scale(1.2,1.2);}
