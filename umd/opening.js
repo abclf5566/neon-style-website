@@ -1,29 +1,20 @@
-let animation;
+const mainTitle = document.getElementById('mainTitle');
+const chars = Array.from(mainTitle.textContent);
+mainTitle.textContent = '';
+chars.forEach((char, i) => {
+  const span = document.createElement('span');
+  span.textContent = char;
+  span.style.animationDelay = `${i * 0.2}s`;
+  mainTitle.append(span);
+});
 
-window.onload = function() {
-  const animationElement = document.getElementById('animation');
-  animation = anime.timeline({
-    autoplay: true,
+setTimeout(() => {
+  mainTitle.style.opacity = '1';
+  Array.from(mainTitle.children).forEach((span, i) => {
+    span.style.animation = `fade-in ${i * 0.2}s forwards`;
   });
-  animation.add({
-    targets: animationElement,
-    opacity: 1,
-    duration: 1000,
-    easing: 'easeInOutQuad',
-  }).add({
-    targets: animationElement,
-    translateY: '-100%',
-    duration: 1000,
-    easing: 'easeInOutQuad',
-    delay: 1000,
-  }).add({
-    targets: animationElement,
-    opacity: 0,
-    duration: 1000,
-    easing: 'easeInOutQuad',
-    delay: 1000,
-    complete: function(anim) {
-      window.parent.frames['animation-frame'].location.replace('index.html');
-    },
-  });
-};
+}, 500);
+
+setTimeout(() => {
+  mainTitle.classList.add('bounce');
+}, chars.length * 200 + 500);
